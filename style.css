@@ -23,11 +23,22 @@ html {
   header a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    font-size: 48px;
   }
 
   header a:hover {
+    font-weight: bold;
+  }
+
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  header nav a:hover {
     color: #c2eaff;
     text-decoration: underline;
+    font-weight: normal;
   }
   
