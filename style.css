@@ -25,4 +25,10 @@ html {
     text-decoration: none;
     margin: 0 10px;
   }
+
+  header a:hover {
+    color: #c2eaff;
+    text-decoration: underline;
+    background-color: #7a7a7a;
+  }
   
