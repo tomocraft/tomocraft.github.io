@@ -30,13 +30,13 @@ html {
     font-weight: bold;
   }
 
-  header nav a {
+  header nav a.nav {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
   }
 
-  header nav a:hover {
+  header nav a:hover.nav {
     color: #c2eaff;
     text-decoration: underline;
     font-weight: normal;
