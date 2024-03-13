@@ -1,0 +1,133 @@
+* {
+    font-family: "Meiryo", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo", sans-serif;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: rgb(39, 39, 39);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    position: fixed;
+    display: block;
+    z-index: -1000;
+    top: 0;
+    left: 0;
+}
+
+div {
+    width: 100%;
+}
+
+h1.title {
+    margin-top: 5%;
+    margin-left: 5%;
+    color: #ffffff;
+}
+
+h2.title {
+    color: #ffffff;
+}
+
+div.terms {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 95%;
+}
+
+div.terms h2 {
+    color: #ffffff;
+    margin-top: 5%;
+}
+
+div.terms h3 {
+    font-family: "Meiryo", sans-serif;
+    color: #ffffff;
+    width: 85%;
+}
+
+div.sns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.sns a i {
+    font-size: 40px;
+    margin: 20px 20px;
+    margin-top: 40px;
+    color: #ffffff;
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+div.sns a:hover i {
+    opacity: 0.5;
+}
+
+form {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+#encryptFileInput {
+    display: none;
+}
+
+#decryptFileInput {
+    display: none;
+}
+
+.file-input-label {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-input-label:hover {
+    background-color: #2980b9;
+}
+
+form input[type=text] {
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 35px;
+    margin-left: 1%;
+    text-align: center;
+}
+
+form button {
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    form button {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 370px) {
+    form input[type=text] {
+        margin-top: 3%;
+    }
+}

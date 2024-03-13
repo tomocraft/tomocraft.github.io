@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt & Decrypt Resource Pack</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="modules/crypto.js"></script>
+    <meta property="og:title" content="Encrypt & Decrypt Resource Pack" />
+    <meta
+      property="og:description"
+      content="Let's encrypt and decrypt your resource pack!"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div>
+        <h1 class="title">Encrypt & Decrypt Resource Pack</h1>
+    </div>
+
+    <canvas id="backgroundCanvas"></canvas>
+
+    <form id="encryptForm" enctype="multipart/form-data">
+        <div>
+            <h2 class="title">Encrypt Resource Pack</h2>
+        </div>
+        <label for="encryptFileInput" class="file-input-label" id="encryptLabel">Select a file</label>
+        <input type="file" name="file" id="encryptFileInput" accept=".zip, .mcpack, .mcaddon">
+        <input type="text" name="textData" id="encryptKeyInput" placeholder="Encryption Key (optional)">
+        <button type="button" id="encryptButton" onclick="encryptFile()" disabled>Encrypt Resource Pack</button>
+        <h3 id="key" style="color: #ffffff; font-family: 'Meiryo', sans-serif; width: 95%; word-break: break-all;"></h3>
+    </form>
+
+    <form id="decryptForm" enctype="multipart/form-data">
+        <div>
+            <h2 class="title">Decrypt Resource Pack</h2>
+        </div>
+        <label for="decryptFileInput" class="file-input-label" id="decryptLabel">Select a file</label>
+        <input type="file" name="file" id="decryptFileInput" accept=".zip, .mcpack, .mcaddon">
+        <input type="text" name="textData" id="decryptKeyInput" placeholder="Encryption Key (required)" required>
+        <button type="button" id="decryptButton" onclick="decryptFile()" disabled>Decrypt Resource Pack</button>
+    </form>
+
+    <div class="terms">
+        <h2>Disclaimer</h2>
+        <h3>The use of this tool is at the user's own risk. The creator shall not be held responsible for any damages or issues arising from the use of the tool.</h3>
+        <h3>The creator disclaims any responsibility for data loss, profit loss, business interruption, or any other direct or indirect damages, regardless of whether the tool is suitable for a specific purpose or not.</h3>
+        <h2>Terms of Use</h2>
+        <h3>Users must use this tool in accordance with the law. Any involvement in fraudulent activities, malicious use, or illegal actions is strictly prohibited.</h3>
+        <h3>Do not use this tool to decrypt encrypted resource packs owned by others.</h3>
+        <h2>Changes and Termination of Service</h2>
+        <h3>The creator reserves the right to modify or terminate the functionality of the tool without prior notice. The creator shall not be liable for any damages incurred by users as a result.</h3>
+        <h2>Changes to Terms of Use</h2>
+        <h3>The creator has the right to modify these terms of use. In the event of changes, users are required to adhere to the latest terms of use.</h3>
+        <h2>Acknowledgements</h2>
+        <h3><a href="https://github.com/valaphee/mcrputil" style="font-family: 'Meiryo', sans-serif; color: #ffffff; text-decoration: underline;">Valaphee's mcrputil</a>: encrypt and decrypt algorithm</h3>
+        <h3><a href="https://github.com/nodejs/node/tree/main/src/crypto" style="font-family: 'Meiryo', sans-serif; color: #ffffff; text-decoration: underline;">Crypto module of Node.js</a>: for encrypt and decrypt</h3>
+        <h3><a href="LICENSE" style="font-family: 'Meiryo', sans-serif; color: #ffffff;">LICENSE</a></h3>
+    </div>
+
+    <div class="sns">
+        <a href="https://x.com/breadawful"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/tomocraft"><i class="fab fa-github"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+</script>
+</body>
+
+</html>
