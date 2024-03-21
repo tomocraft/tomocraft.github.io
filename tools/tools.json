@@ -1,0 +1,20 @@
+[
+    {
+        "image": "/images/notif_2.webp",
+        "date": "2024/03/14",
+        "text": "EncryptRP - A WEB TOOL",
+        "description": "This is a tool to encrypt resource packs.",
+        "url": "./EncryptRP",
+        "text_ja": "EncryptRP - WEBツール",
+        "description_ja": "リソースパックを暗号化するためのツールです。"
+    },
+    {
+        "image": "https://pbs.twimg.com/media/GHpmWqoa8AEonua?format=png&name=900x900",
+        "date": "2024/03/15",
+        "text": "EncryptAndDecryptRP - Node.js",
+        "description": "This is a tool to encrypt resource packs.",
+        "url": "https://github.com/tomocraft/EncryptAndDecryptRP",
+        "text_ja": "Encrypt&DecryptRP - Node.js",
+        "description_ja": "リソースパックを暗号化するためのツールです。"
+    }
+]

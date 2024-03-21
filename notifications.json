@@ -1,0 +1,20 @@
+[
+    {
+        "image": "images/top_3.webp",
+        "date": "2024/03/20",
+        "text": "The site has been published!",
+        "url": "./index.html"
+    },
+    {
+        "image": "images/notif_2.webp",
+        "date": "2024/03/14",
+        "text": "RP encryption tool has been released!",
+        "url": "./tools/EncryptRP/"
+    },
+    {
+        "image": "https://minecraft-mcworld.com/wp-content/uploads/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2023-12-18-021637-130abfd9.png",
+        "date": "2023/12/19",
+        "text": "Show Health Addon has been released!",
+        "url": "https://minecraft-mcworld.com/56792/"
+    }
+]

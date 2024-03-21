@@ -1,0 +1,134 @@
+.notice h1 {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(188, 0, 0);
+    margin-bottom: 1em;
+}
+
+.notices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+a.notice-content {
+    position: relative;
+    min-width: 240px;
+}
+
+.notices a {
+    margin: 0 15px;
+    width: 30%;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.notices a:hover {
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+}
+
+.notices img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 0;
+    object-fit: cover;
+}
+
+.notices h2 {
+    padding: 10px 0;
+    margin-top: 0;
+    text-align: center;
+    background-color: #ffffff;
+    color: #222222;
+    font-size: min(max(1.3vw, 12px), 18px);
+}
+
+.notices h3 {
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0 3px;
+}
+
+.index {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.twitter {
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.tool {
+    margin-left: 5%;
+    width: 40%;
+    display: block;
+    height: 500px;
+}
+
+.tools {
+    display: flex;
+}
+
+.tool a {
+    width: 75%;
+    max-width: 250px;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s;
+    color: #777777;
+}
+
+a.padding h3 {
+    padding: 0px 15.5px;
+}
+
+.tool h1 {
+    margin-top: 5px;
+    color: rgb(188, 0, 0);
+    text-align: center;
+}
+
+.tool img {
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.tool a:hover img {
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+}
+
+.tool h7 {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 750px) {
+    .twitter {
+        width: 80%;
+    }
+    .tool {
+        width: 80%;
+    }
+}
+
+@media (max-width: 540px) {
+    .notices a {
+        width: 80%;
+    }
+    .notices h2 {
+        font-size: min(4vw, 18px);
+    }
+}

@@ -1,0 +1,103 @@
+.first-index h1 {
+    margin-top: 2em;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: rgb(188, 0, 0);
+}
+
+.first-index p {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.projects {
+    margin-bottom: 40px;
+}
+
+.projects h1 {
+    margin-top: 2em;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: rgb(188, 0, 0);
+}
+
+.projects div.project-contents a {
+    text-decoration: none;
+    color: #000000;
+    width: 60%;
+    min-width: 500px;
+    max-width: 700px;
+    height: fit-content;
+    display: flex;
+    margin: auto;
+    background-color: #ffffff;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.projects div.project-contents a:hover {
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+}
+
+.projects div.project-contents a img {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: flex;
+    margin-right: 20px;
+}
+
+.projects div.project-contents a div {
+    display: block;
+}
+
+.projects div.project-contents a div h3 span.date {
+    margin-left: 12px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+@media (max-width: 1200px) {
+    .projects div.project-contents a div p {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1050px) {
+    .projects div.project-contents a div p {
+        margin-top: 5px;
+    }
+
+    .projects div.project-contents a div h3 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 515px) {
+    .projects div.project-contents a {
+        width: 90%;
+        min-width: 200px;
+        max-width: none;
+    }
+
+    .projects div.project-contents a img {
+        width: 15%;
+    }
+
+    .projects div.project-contents a div p {
+        font-size: 2.4vw;
+    }
+
+    .projects div.project-contents a div h3 {
+        font-size: 2.5vw;
+    }
+
+    .projects div.project-contents a div h3 span.date {
+        font-size: 1.5vw;
+    }
+}

@@ -1,0 +1,321 @@
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: "Meiryo", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo", sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.sawarabi-mincho-regular {
+    font-family: "Sawarabi Mincho", "Meiryo", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo", sans-serif;
+    font-style: normal;
+}
+
+
+.scroll_up {
+    transition: 0.8s ease-in-out;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.scroll_up.on {
+    transform: translateY(0);
+    opacity: 1.0;
+}
+
+.scroll_left {
+    -webkit-transition: 0.8s ease-in-out;
+    -moz-transition: 0.8s ease-in-out;
+    -o-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+    transform: translateX(-30px);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+}
+
+.scroll_left.on {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1.0;
+    transform: translateX(0);
+}
+
+.scroll_right {
+    -webkit-transition: 0.8s ease-in-out;
+    -moz-transition: 0.8s ease-in-out;
+    -o-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+    transform: translateX(30px);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+}
+
+.scroll_right.on {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1.0;
+    transform: translateX(0);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+.header a {
+    opacity: 1;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    transition: opacity 0.5s;
+}
+
+.header a.logo {
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+.header a.logo img {
+    filter: brightness(3.0);
+}
+
+.header a:hover {
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    background-color: #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.header__container.transparent {
+    background-color: transparent;
+}
+
+a.header__logo {
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #e4e4e4;
+    font-weight: bold;
+}
+
+.hamburger {
+    width: 40px;
+    height: 70px;
+    right: 20px;
+    position: relative;
+    appearance: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.hamburger span,
+.hamburger span::after,
+.hamburger span::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-color: #000000;
+    transition: all 0.3s;
+    border-radius: 1px;
+}
+
+.hamburger.white span,
+.hamburger.white span::after,
+.hamburger.white span::before {
+    background-color: #d4d4d4;
+}
+
+.hamburger.black span,
+.hamburger.black span::after,
+.hamburger.black span::before {
+    background-color: #000000;
+}
+
+.hamburger.open span,
+.hamburger.open span::after,
+.hamburger.open span::before {
+    background-color: #000000;
+}
+
+
+.hamburger span::before {
+    top: -15px;
+}
+
+.hamburger span::after {
+    bottom: -15px;
+}
+
+.hamburger.open span {
+    background-color: transparent;
+}
+
+.hamburger.open span::before {
+    top: 0;
+    transform: rotate(-135deg);
+}
+
+.hamburger.open span::after {
+    bottom: 0;
+    transform: rotate(135deg);
+}
+
+.nav {
+    position: fixed;
+    top: -150vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding-top: 90px;
+    color: #222222;
+    text-align: center;
+    line-height: 50px;
+    transition: top 0.5s ease;
+    z-index: 1;
+}
+
+.nav.open {
+    top: 0%;
+    overflow-y: hidden;
+}
+
+ul.nav__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 10%;
+}
+
+.nav__list li {
+    margin-top: 30px;
+}
+
+.nav__item {
+    margin-right: 20px;
+    position: relative;
+}
+
+.page-top {
+    z-index: 999;
+    transition: all 0.5s;
+    opacity: 0;
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    text-align: center;
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+}
+
+.page-top a {
+    text-decoration: none;
+}
+
+.page-top a:before {
+    content: "▲";
+    display: block;
+    font-size: 30px;
+    font-weight: 900;
+    color: #000000;
+    line-height: 48px;
+}
+
+.sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sns a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 35px;
+    margin: 30px 10px;
+    transition: all 0.3s;
+}
+
+.sns a:hover {
+    opacity: 0.8;
+}
+
+.copyright h5 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.top h1 {
+    position: absolute;
+    color: white;
+}
+
+.top img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.logo-bottom p {
+    text-align: center;
+}
+
+.logo-bottom img {
+    width: 200px;
+    margin: auto;
+}
+
+@media (max-width: 500px) {
+    .top h1 {
+        font-size: 6vw;
+    }
+}

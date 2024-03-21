@@ -1,0 +1,48 @@
+.first-intro h1 {
+    margin-top: 2em;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: rgb(188, 0, 0);
+}
+
+.first-intro p {
+    width: 70%;
+    margin: auto;
+}
+
+.second-intro h1 {
+    margin-top: 2em;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: rgb(188, 0, 0);
+}
+
+.second-intro div {
+    width: fit-content;
+    margin: auto;
+    background-color: #ffffff;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.second-intro div:hover {
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+}
+
+.second-intro p {
+    width: 100%;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+    .first-intro p {
+        width: 90%;
+    }
+}
