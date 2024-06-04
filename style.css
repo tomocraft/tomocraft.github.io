@@ -69,7 +69,6 @@ a.notice-content {
 }
 
 .tool {
-    margin-left: 5%;
     width: 40%;
     display: block;
     height: 500px;
@@ -121,6 +120,12 @@ a.padding h3 {
     }
     .tool {
         width: 80%;
+    }
+}
+
+@media (min-width: 750px) {
+    .tool {
+        margin-left: 5%;
     }
 }
 
