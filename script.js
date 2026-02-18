@@ -14,7 +14,7 @@ function getUrlQueries() {
 const query_2 = getUrlQueries();
 if (query_2.lang) {
     if (query_2.lang === "ja") {
-        fetch("https://tomocraft.github.io/lang.json")
+        fetch("https://www.tomocraft.tech/lang.json")
             .then(response => response.json())
             .then(lang => {
                 const element = document.getElementById("home.disclaimer");
@@ -25,7 +25,7 @@ if (query_2.lang) {
             });
     }
 }
-fetch('https://tomocraft.github.io/notifications.json')
+fetch('https://www.tomocraft.tech/notifications.json')
     .then(response => response.json())
     .then(notifications => {
         for (let i = 0; i < 3; i++) {

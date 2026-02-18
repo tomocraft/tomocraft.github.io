@@ -14,7 +14,7 @@ function getUrlQueries() {
 const query = getUrlQueries();
 if (query.lang) {
     if (query.lang === "ja") {
-        fetch("https://tomocraft.github.io/lang.json")
+        fetch("https://www.tomocraft.tech/lang.json")
             .then(response => response.json())
             .then(lang => {
                 const element = document.getElementById("first-intro");

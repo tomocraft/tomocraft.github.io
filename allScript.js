@@ -28,7 +28,7 @@ if (query_1.lang === "ja") {
 }
 if (query_1.lang) {
     if (query_1.lang === "ja") {
-        fetch("https://tomocraft.github.io/lang.json")
+        fetch("https://www.tomocraft.tech/lang.json")
             .then(response => response.json())
             .then(lang => {
                 const elements = Array.from(document.body.querySelectorAll('*')).filter(element => lang.ja_JP[element.textContent]);

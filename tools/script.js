@@ -1,5 +1,5 @@
 "use strict";
-fetch("https://tomocraft.github.io/tools/tools.json")
+fetch("https://www.tomocraft.tech/tools/tools.json")
     .then(response => response.json())
     .then(projects => {
         const projectContents = document.getElementById("project-contents");
