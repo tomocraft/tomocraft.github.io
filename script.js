@@ -14,7 +14,7 @@ function getUrlQueries() {
 const query_2 = getUrlQueries();
 if (query_2.lang) {
     if (query_2.lang === "ja") {
-        fetch("https://www.tomocraft.tech/lang.json")
+        fetch("https://tomocraft.github.io/lang.json")
             .then(response => response.json())
             .then(lang => {
                 const element = document.getElementById("home.disclaimer");
@@ -25,7 +25,7 @@ if (query_2.lang) {
             });
     }
 }
-fetch('https://www.tomocraft.tech/notifications.json')
+fetch('https://tomocraft.github.io/notifications.json')
     .then(response => response.json())
     .then(notifications => {
         for (let i = 0; i < 3; i++) {
@@ -45,9 +45,6 @@ fetch('https://www.tomocraft.tech/notifications.json')
     });
 const topImgs = ["images/top_1.webp", "images/top_2.webp", "images/top_3.webp", "images/top_4.webp"];
 const randomIndex = Math.floor(Math.random() * topImgs.length);
-if (randomIndex === 0 || randomIndex === 1 || randomIndex === 3) {
-    document.querySelector(".hamburger").classList.add(["white"]);
-}
 document.getElementById("topImg").src = topImgs[randomIndex];
 const topTexts = ["\"Shaping ideas\"", "\"Imagination & Creativity\"", "\"Realize ideas\""];
 document.getElementById("topText").textContent = topTexts[Math.floor(Math.random() * topTexts.length)];

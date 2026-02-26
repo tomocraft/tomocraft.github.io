@@ -1,32 +1,38 @@
+/* ===== Homepage: Notification Section ===== */
 .notice h1 {
-    margin-top: 2em;
+    margin-top: 3em;
     text-align: center;
     font-size: 2em;
-    color: rgb(188, 0, 0);
-    margin-bottom: 1em;
+    color: #e0e0e8;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.1em;
 }
 
 .notices {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 24px;
+    padding: 0 20px;
 }
 
 a.notice-content {
     position: relative;
     min-width: 240px;
+    overflow: hidden;
+    padding: 0;
 }
 
 .notices a {
-    margin: 0 15px;
-    width: 30%;
+    width: 28%;
     text-decoration: none;
-    transition: all 0.2s;
+    transition: all 0.4s ease;
 }
 
 .notices a:hover {
-    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(139, 0, 0, 0.2);
 }
 
 .notices img {
@@ -34,59 +40,88 @@ a.notice-content {
     aspect-ratio: 16 / 9;
     margin-bottom: 0;
     object-fit: cover;
+    border-radius: 16px 16px 0 0;
 }
 
 .notices h2 {
-    padding: 10px 0;
+    padding: 14px 16px;
     margin-top: 0;
     text-align: center;
-    background-color: #ffffff;
-    color: #222222;
-    font-size: min(max(1.3vw, 12px), 18px);
+    background: transparent;
+    color: #d0d0d8;
+    font-size: min(max(1.2vw, 12px), 16px);
+    font-weight: 400;
 }
 
 .notices h3 {
     position: absolute;
-    top: -15px;
-    left: 5px;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 0 3px;
+    top: 10px;
+    left: 12px;
+    background: rgba(220, 20, 60, 0.1);
+    border: 1px solid rgba(220, 20, 60, 0.4);
+    color: #ff4d6d;
+    padding: 2px 10px;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
 }
 
+.notices a:hover h3 {
+    background: rgba(220, 20, 60, 0.2);
+    border-color: rgba(220, 20, 60, 0.8);
+    box-shadow: 0 0 10px rgba(220, 20, 60, 0.2);
+}
+
+/* ===== Homepage: Index Section (Twitter + Creations) ===== */
 .index {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .twitter {
     width: 40%;
     margin-bottom: 30px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .tool {
     width: 40%;
     display: block;
-    height: 500px;
 }
 
 .tools {
     display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .tool a {
-    width: 75%;
-    max-width: 250px;
+    width: 45%;
+    max-width: 220px;
     display: block;
-    margin: auto;
     text-decoration: none;
     text-align: center;
-    transition: all 0.2s;
-    color: #777777;
+    transition: all 0.4s ease;
+    color: rgba(200, 200, 210, 0.7);
+    padding: 20px 16px;
+}
+
+.tool a:hover {
+    transform: translateY(-5px);
+    color: #e0e0e8;
 }
 
 a.padding h3 {
@@ -95,45 +130,65 @@ a.padding h3 {
 
 .tool h1 {
     margin-top: 5px;
-    color: rgb(188, 0, 0);
+    color: #e0e0e8;
     text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
 }
 
 .tool img {
-    width: 100%;
-    transition: all 0.2s;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.4s ease;
+    border-radius: 12px;
 }
 
 .tool a:hover img {
-    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+    filter: drop-shadow(0 0 12px rgba(220, 20, 60, 0.35));
+}
+
+.tool h3 {
+    font-size: 0.95em;
+    font-weight: 400;
+    margin-top: 12px;
+    letter-spacing: 0.05em;
 }
 
 .tool h7 {
-    margin-top: 20px;
+    margin-top: 24px;
     display: block;
     margin-bottom: 60px;
+    color: rgba(200, 200, 210, 0.35);
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
 }
 
+/* ===== Responsive ===== */
 @media (max-width: 750px) {
     .twitter {
-        width: 80%;
+        width: 85%;
     }
+
     .tool {
-        width: 80%;
+        width: 85%;
     }
 }
 
 @media (min-width: 750px) {
     .tool {
-        margin-left: 5%;
+        margin-left: 3%;
     }
 }
 
 @media (max-width: 540px) {
     .notices a {
-        width: 80%;
+        width: 85%;
     }
+
     .notices h2 {
-        font-size: min(4vw, 18px);
+        font-size: min(4vw, 16px);
     }
 }

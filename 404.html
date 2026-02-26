@@ -3,62 +3,115 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Hello, I am Tomocraft." />
-    <meta name="keywords" content="Tomocraft, マインクラフト, マイクラ統合版, Tomoクラフト, Minecraft, Minecraft Bedrock" />
+    <meta name="description" content="404 - Page Not Found. The requested page could not be found on Tomocraft." />
+    <meta name="keywords" content="Tomocraft, 404, Error, Minecraft Bedrock" />
+    <meta name="author" content="Tomocraft" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/webclip.png" />
+    <!-- Open Graph / Facebook -->
     <meta property="og:site_name" content="Tomocraft" />
-    <meta property="og:url" content="https://www.tomocraft.tech/" />
+    <meta property="og:url" content="https://tomocraft.github.io/404.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="404 Not Found - Tomocraft" />
-    <meta property="og:description" content="Hello, I am Tomocraft." />
-    <meta property="og:image" content="https://www.tomocraft.tech/webclip.png" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="404 - Page Not Found | Tomocraft" />
+    <meta property="og:description" content="The page you are looking for doesn't exist." />
+    <meta property="og:image" content="https://tomocraft.github.io/webclip.png" />
+    <meta property="og:locale" content="ja_JP" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@breadawful" />
+    <meta name="twitter:creator" content="@breadawful" />
+    <meta name="twitter:title" content="404 - Page Not Found | Tomocraft" />
+    <meta name="twitter:description" content="The page you are looking for doesn't exist." />
+    <meta name="twitter:image" content="https://tomocraft.github.io/webclip.png" />
     <title>404 Not found - Tomocraft</title>
-    <link href="style.css?v=0.0.1" rel="stylesheet" type="text/css" />
-    <link href="/allStyle.css?v=0.0.1" rel="stylesheet" type="text/css" />
+    <link href="/allStyle.css?v=2.0.0" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
     <style>
-        .first-intro h1 {
-            margin-top: 2em;
-            font-size: 2em;
-            margin-bottom: 1em;
+        .first-intro {
+            padding: 60px 20px;
             text-align: center;
-            color: rgb(188, 0, 0);
+        }
+
+        .first-intro h1 {
+            font-size: 2em;
+            color: #e0e0e8;
+            margin-bottom: 0.5em;
+            letter-spacing: 0.1em;
+        }
+
+        .first-intro p {
+            color: rgba(200, 200, 210, 0.6);
+            font-size: 1em;
+        }
+
+        .first-intro a {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 12px 32px;
+            background: linear-gradient(135deg, #8b0000, #dc143c);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            letter-spacing: 0.05em;
+        }
+
+        .first-intro a:hover {
+            box-shadow: 0 0 25px rgba(220, 20, 60, 0.4);
+            transform: translateY(-2px);
         }
     </style>
 </head>
 
 <body>
+    <canvas id="bg-canvas"></canvas>
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon icon-moon"></i>
+        <i class="fa-solid fa-sun icon-sun"></i>
+    </button>
     <div class="header">
         <div class="header__container transparent">
             <a href="/" class="logo" id="move">
                 <img src="/images/logo.webp" alt="tomocraft-logo" width="200" height="auto" />
             </a>
-            <button type="button" class="hamburger white">
+            <button type="button" class="hamburger">
                 <span></span>
             </button>
-            <nav class="nav sawarabi-mincho-regular">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="/" id="move">Home</a></li>
-                    <li class="nav__item"><a href="/about/" id="move">About</a></li>
-                    <li class="nav__item"><a href="/projects/" id="move">Projects</a></li>
-                    <li class="nav__item"><a href="/tools/" id="move">Tools</a></li>
-                </ul>
-            </nav>
         </div>
     </div>
+    <nav class="nav sawarabi-mincho-regular">
+        <div class="nav__inner">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="/" id="move">Home</a></li>
+                <li class="nav__item"><a href="/about/" id="move">About</a></li>
+                <li class="nav__item"><a href="/projects/" id="move">Projects</a></li>
+                <li class="nav__item"><a href="/tools/" id="move">Tools</a></li>
+            </ul>
+            <div class="nav__footer">
+                <div class="nav__sns">
+                    <a href="https://www.youtube.com/@Tomo-craft"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://twitter.com/breadawful"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/tomocraft"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <p class="nav__copy">&copy; 2024 Tomocraft</p>
+            </div>
+        </div>
+    </nav>
     <div class="page-top"><a href="#"></a></div>
     <div class="top sawarabi-mincho-regular">
         <h1 id="topText">Error - 404</h1>
         <img id="topImg" src="/images/404.webp" />
     </div>
-    <div class="first-intro">
+    <div class="first-intro fade-in-section">
         <h1 class="sawarabi-mincho-regular">Page not found...</h1>
+        <p class="sawarabi-mincho-regular">The page you are looking for does not exist or has been moved.</p>
+        <a href="/" id="move">Back to Home</a>
     </div>
     <div class="logo-bottom">
         <p><img src="/images/logo.webp"></p>
@@ -69,7 +122,7 @@
         <a href="https://github.com/tomocraft"><i class="fa-brands fa-github"></i></a>
     </div>
     <div class="copyright sawarabi-mincho-regular">
-        <h5>Copyright © 2024 Tomocraft (BreadAwful). All rights reserved.</h5>
+        <h5>Copyright © 2024-2026 Tomocraft. All rights reserved.</h5>
     </div>
     <script src="/allScript.js"></script>
 </body>

@@ -28,7 +28,7 @@ if (query_1.lang === "ja") {
 }
 if (query_1.lang) {
     if (query_1.lang === "ja") {
-        fetch("https://www.tomocraft.tech/lang.json")
+        fetch("https://tomocraft.github.io/lang.json")
             .then(response => response.json())
             .then(lang => {
                 const elements = Array.from(document.body.querySelectorAll('*')).filter(element => lang.ja_JP[element.textContent]);
@@ -53,34 +53,52 @@ if (query_1.lang) {
             });
     }
 }
+
 document.addEventListener('DOMContentLoaded', function () {
-    let open = false;
+    // === Theme Toggle ===
+    const savedTheme = localStorage.getItem('tomocraft-theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    const themeToggle = document.querySelector('.theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function () {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('tomocraft-theme', next);
+        });
+    }
+
+    // === Hamburger Menu ===
+    let menuOpen = false;
     const hamburgerButton = document.querySelector('.hamburger');
     const nav = document.querySelector('.nav');
     const headerContainer = document.querySelector('.header__container');
     const pageTop = document.querySelector('.page-top');
+
     hamburgerButton.addEventListener('click', function () {
         hamburgerButton.classList.toggle('open');
         nav.classList.toggle('open');
-        if (open) {
-            open = false;
-            document.getElementsByTagName('html').item(0).style.overflow = 'unset';
+        headerContainer.classList.toggle('menu-open');
+        if (menuOpen) {
+            menuOpen = false;
+            document.documentElement.style.overflow = 'unset';
         } else {
-            open = true;
+            menuOpen = true;
             setTimeout(() => {
-                if (open) {
-                    document.getElementsByTagName('html').item(0).style.overflow = 'hidden';
+                if (menuOpen) {
+                    document.documentElement.style.overflow = 'hidden';
                 }
             }, 500);
         }
     });
+
+    // === Scroll: Header bg + Page-top button ===
     window.addEventListener('scroll', function () {
         if (window.pageYOffset >= 50) {
             headerContainer.classList.remove('transparent');
-            hamburgerButton.classList.add("black");
         } else {
             headerContainer.classList.add('transparent');
-            hamburgerButton.classList.remove("black");
         }
         if (window.pageYOffset >= 200) {
             pageTop.style.display = "block";
@@ -96,4 +114,81 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 5000);
         }
     });
+
+    // === Intersection Observer: Fade-in sections ===
+    const fadeElements = document.querySelectorAll('.fade-in-section');
+    if (fadeElements.length > 0) {
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    fadeObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        fadeElements.forEach(el => fadeObserver.observe(el));
+    }
+
+    // === Lightweight Particle Background ===
+    const canvas = document.getElementById('bg-canvas');
+    if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const PARTICLE_COUNT = 30;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 1.8 + 0.4;
+                this.speedX = (Math.random() - 0.5) * 0.25;
+                this.speedY = (Math.random() - 0.5) * 0.25;
+                this.opacity = Math.random() * 0.25 + 0.03;
+                this.hue = Math.random() > 0.7 ? 0 : 240;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+                    this.reset();
+                }
+            }
+            draw() {
+                const theme = document.documentElement.getAttribute('data-theme');
+                const lightness = theme === 'light' ? '35%' : '50%';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `hsla(${this.hue}, 60%, ${lightness}, ${this.opacity})`;
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < PARTICLE_COUNT; i++) {
+            particles.push(new Particle());
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+    }
 });

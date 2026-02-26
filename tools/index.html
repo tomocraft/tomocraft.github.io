@@ -3,57 +3,86 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Hello, I am Tomocraft." />
-    <meta name="keywords" content="Tomocraft, マインクラフト, マイクラ統合版, Tomoクラフト, Minecraft, Minecraft Bedrock" />
+    <meta name="description"
+        content="Useful tools for Minecraft Bedrock Edition developed by Tomocraft. Utilities for creators and players." />
+    <meta name="keywords"
+        content="Tomocraft, Tools, マインクラフト, マイクラ統合版, Tomoクラフト, Minecraft, Minecraft Bedrock, Minecraft BE" />
+    <meta name="author" content="Tomocraft" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/webclip.png" />
+    <!-- Open Graph / Facebook -->
     <meta property="og:site_name" content="Tomocraft" />
-    <meta property="og:url" content="https://www.tomocraft.tech/" />
+    <meta property="og:url" content="https://tomocraft.github.io/tools/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Tools - Tomocraft" />
-    <meta property="og:description" content="Hello, I am Tomocraft." />
-    <meta property="og:image" content="https://www.tomocraft.tech/webclip.png" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:description" content="Access various tools and utilities for Minecraft Bedrock Edition." />
+    <meta property="og:image" content="https://tomocraft.github.io/webclip.png" />
+    <meta property="og:locale" content="ja_JP" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@breadawful" />
+    <meta name="twitter:creator" content="@breadawful" />
+    <meta name="twitter:title" content="Tools - Tomocraft" />
+    <meta name="twitter:description" content="Access various tools and utilities for Minecraft Bedrock Edition." />
+    <meta name="twitter:image" content="https://tomocraft.github.io/webclip.png" />
     <title>Tools - Tomocraft</title>
-    <link href="style.css?v=0.0.1" rel="stylesheet" type="text/css" />
-    <link href="/allStyle.css?v=0.0.1" rel="stylesheet" type="text/css" />
+    <link href="style.css?v=2.0.0" rel="stylesheet" type="text/css" />
+    <link href="/allStyle.css?v=2.0.0" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
 </head>
 
 <body>
+    <canvas id="bg-canvas"></canvas>
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon icon-moon"></i>
+        <i class="fa-solid fa-sun icon-sun"></i>
+    </button>
     <div class="header">
         <div class="header__container transparent">
             <a href="/" class="logo" id="move">
                 <img src="/images/logo.webp" alt="tomocraft-logo" width="200" height="auto" />
             </a>
-            <button type="button" class="hamburger white">
+            <button type="button" class="hamburger">
                 <span></span>
             </button>
-            <nav class="nav sawarabi-mincho-regular">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="/" id="move">Home</a></li>
-                    <li class="nav__item"><a href="/about/" id="move">About</a></li>
-                    <li class="nav__item"><a href="/projects/" id="move">Projects</a></li>
-                    <li class="nav__item"><a href="/tools/" id="move">Tools</a></li>
-                </ul>
-            </nav>
         </div>
     </div>
+    <nav class="nav sawarabi-mincho-regular">
+        <div class="nav__inner">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="/" id="move">Home</a></li>
+                <li class="nav__item"><a href="/about/" id="move">About</a></li>
+                <li class="nav__item"><a href="/projects/" id="move">Projects</a></li>
+                <li class="nav__item"><a href="/tools/" id="move">Tools</a></li>
+            </ul>
+            <div class="nav__footer">
+                <div class="nav__sns">
+                    <a href="https://www.youtube.com/@Tomo-craft"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://twitter.com/breadawful"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/tomocraft"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <p class="nav__copy">&copy; 2024 Tomocraft</p>
+            </div>
+        </div>
+    </nav>
     <div class="page-top"><a href="#"></a></div>
     <div class="top sawarabi-mincho-regular">
         <h1 id="topText">"Realize ideas"</h1>
         <img id="topImg" src="/images/tools.webp" />
     </div>
-    <div class="first-index">
+    <div class="first-index fade-in-section">
         <h1 class="sawarabi-mincho-regular">Important Notice</h1>
+        <hr class="section-divider">
         <p class="sawarabi-mincho-regular">Please use the tool at your own risk.</p>
     </div>
-    <div class="projects">
+    <div class="projects fade-in-section">
         <h1 class="sawarabi-mincho-regular">Creations</h1>
+        <hr class="section-divider">
         <div class="project-contents" id="project-contents"></div>
     </div>
     <div class="logo-bottom">
@@ -65,7 +94,7 @@
         <a href="https://github.com/tomocraft"><i class="fa-brands fa-github"></i></a>
     </div>
     <div class="copyright sawarabi-mincho-regular">
-        <h5>Copyright © 2024 Tomocraft (BreadAwful). All rights reserved.</h5>
+        <h5>Copyright © 2024-2026 Tomocraft. All rights reserved.</h5>
     </div>
     <script src="script.js"></script>
     <script src="/allScript.js"></script>

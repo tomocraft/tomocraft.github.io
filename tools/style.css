@@ -1,46 +1,60 @@
+/* ===== Projects/Tools: Important Notice ===== */
 .first-index h1 {
-    margin-top: 2em;
+    margin-top: 3em;
     font-size: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     text-align: center;
-    color: rgb(188, 0, 0);
+    color: #e0e0e8;
+    letter-spacing: 0.1em;
 }
 
 .first-index p {
     text-align: center;
     width: 70%;
     margin: auto;
+    color: rgba(200, 200, 210, 0.65);
+    font-size: 0.95em;
 }
 
+/* ===== Projects/Tools: Creations List ===== */
 .projects {
     margin-bottom: 40px;
 }
 
 .projects h1 {
-    margin-top: 2em;
+    margin-top: 3em;
     font-size: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     text-align: center;
-    color: rgb(188, 0, 0);
+    color: #e0e0e8;
+    letter-spacing: 0.1em;
 }
 
 .projects div.project-contents a {
     text-decoration: none;
-    color: #000000;
+    color: #d0d0d8;
     width: 60%;
-    min-width: 500px;
+    min-width: 460px;
     max-width: 700px;
     height: fit-content;
     display: flex;
-    margin: auto;
-    background-color: #ffffff;
-    transition: all 0.3s;
-    margin-bottom: 20px;
+    align-items: center;
+    margin: 0 auto 20px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    transition: all 0.4s ease;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .projects div.project-contents a:hover {
-    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(220, 20, 60, 0.25);
+    box-shadow: 0 8px 32px rgba(139, 0, 0, 0.15);
+    transform: translateY(-3px);
 }
 
 .projects div.project-contents a img {
@@ -49,18 +63,37 @@
     object-fit: cover;
     display: flex;
     margin-right: 20px;
+    border-radius: 16px 0 0 16px;
 }
 
 .projects div.project-contents a div {
     display: block;
+    padding: 12px 16px 12px 0;
+}
+
+.projects div.project-contents a div h3 {
+    color: #e0e0e8;
+    font-weight: 500;
+    font-size: 1em;
 }
 
 .projects div.project-contents a div h3 span.date {
     margin-left: 12px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: normal;
+    color: rgba(220, 20, 60, 0.8);
+    background: rgba(220, 20, 60, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
 }
 
+.projects div.project-contents a div p {
+    color: rgba(200, 200, 210, 0.6);
+    font-size: 0.85em;
+    line-height: 1.5;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 1200px) {
     .projects div.project-contents a div p {
         margin-bottom: 0;
@@ -86,7 +119,7 @@
     }
 
     .projects div.project-contents a img {
-        width: 15%;
+        width: 18%;
     }
 
     .projects div.project-contents a div p {
@@ -94,10 +127,10 @@
     }
 
     .projects div.project-contents a div h3 {
-        font-size: 2.5vw;
+        font-size: 2.8vw;
     }
 
     .projects div.project-contents a div h3 span.date {
-        font-size: 1.5vw;
+        font-size: 1.8vw;
     }
 }
