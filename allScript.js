@@ -54,10 +54,14 @@ if (query_1.lang) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    // === Theme Toggle ===
+// === Theme Initialization (Run immediately to prevent flash) ===
+(function () {
     const savedTheme = localStorage.getItem('tomocraft-theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
+})();
+
+document.addEventListener('DOMContentLoaded', function () {
+    // === Theme Toggle Listener ===
 
     const themeToggle = document.querySelector('.theme-toggle');
     if (themeToggle) {

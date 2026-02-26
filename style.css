@@ -92,9 +92,89 @@ a.notice-content {
 .twitter {
     width: 40%;
     margin-bottom: 30px;
-    border-radius: 16px;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ===== Twitter Card ===== */
+.twitter-card {
+    padding: 24px;
+    border-radius: 20px;
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.twitter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.twitter-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.twitter-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-secondary);
+}
+
+.twitter-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.twitter-info h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+.twitter-handle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.twitter-brand-icon {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    opacity: 0.8;
+}
+
+.twitter-bio {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0 0 24px 0;
+}
+
+.twitter-follow-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+    color: white !important;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(220, 20, 60, 0.2);
+}
+
+.twitter-follow-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(220, 20, 60, 0.4);
 }
 
 .tool {
