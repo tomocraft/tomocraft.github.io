@@ -6,15 +6,15 @@ fetch('https://www.tomocraft.com/notifications.json')
     .then(response => response.json())
     .then(notifications => {
         const trans = {
-            "Check MCBE Command Site has been released!": "Check MCBE Command サイトが公開されました！",
-            "Chinese Dance Addon has been released!": "チャイニーズダンスアドオンが公開されました！",
-            "Maze Wars World has been released!": "Maze Wars Worldが公開されました！",
-            "Survival Wars World has been released!": "Survival Wars Worldが公開されました！",
-            "Bedwars World has been released!": "Bedwars Worldが公開されました！",
-            "Mirror Addon has been released!": "Mirror Addonが公開されました！",
+            "Check MCBE Command Site has been released!": "統合版コマンド確認サイトが公開されました！",
+            "Chinese Dance Addon has been released!": "中国軍隊ダンスアドオンが公開されました！",
+            "Maze Wars World has been released!": "迷路PVPが公開されました！",
+            "Survival Wars World has been released!": "サバイバル攻城戦が公開されました！",
+            "Bedwars World has been released!": "ベッドウォーズが公開されました！",
+            "Mirror Addon has been released!": "鏡アドオンが公開されました！",
             "The site has been published!": "サイトが公開されました！",
             "RP encryption tool has been released!": "RP暗号化ツールが公開されました！",
-            "Show Health Addon has been released!": "Show Health Addonが公開されました！"
+            "Show Health Addon has been released!": "HP表示アドオンが公開されました！"
         };
 
         for (let i = 0; i < 3; i++) {

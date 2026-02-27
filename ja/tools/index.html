@@ -4,32 +4,30 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
-        content="Learn more about Tomocraft. Minecraft Bedrock Edition content creator specializing in tools and technical projects." />
+        content="Useful tools for Minecraft Bedrock Edition developed by Tomocraft. Utilities for creators and players." />
     <meta name="keywords"
-        content="Tomocraft, ともくら, ともくらふと, トモクラフト, ともクラフト, Tomoクラフト, About, マインクラフト, マイクラ統合版, Minecraft, Minecraft Bedrock" />
+        content="Tomocraft, ともくら, ともくらふと, トモクラフト, ともクラフト, Tomoクラフト, Tools, マインクラフト, マイクラ統合版, Minecraft, Minecraft Bedrock, Minecraft BE" />
     <meta name="author" content="Tomocraft" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/webclip.png" />
     <!-- Open Graph / Facebook -->
     <meta property="og:site_name" content="Tomocraft" />
-    <meta property="og:url" content="https://www.tomocraft.com/about/" />
+    <meta property="og:url" content="https://www.tomocraft.com/ja/tools/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="About - Tomocraft" />
-    <meta property="og:description"
-        content="Get to know Tomocraft and the motivation behind the Minecraft Bedrock projects." />
+    <meta property="og:title" content="Tools - Tomocraft" />
+    <meta property="og:description" content="Access various tools and utilities for Minecraft Bedrock Edition." />
     <meta property="og:image" content="https://www.tomocraft.com/webclip.png" />
     <meta property="og:locale" content="ja_JP" />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@breadawful" />
     <meta name="twitter:creator" content="@breadawful" />
-    <meta name="twitter:title" content="About - Tomocraft" />
-    <meta name="twitter:description"
-        content="Get to know Tomocraft and the motivation behind the Minecraft Bedrock projects." />
+    <meta name="twitter:title" content="Tools - Tomocraft" />
+    <meta name="twitter:description" content="Access various tools and utilities for Minecraft Bedrock Edition." />
     <meta name="twitter:image" content="https://www.tomocraft.com/webclip.png" />
-    <title>About - Tomocraft</title>
-    <link href="style.css?v=2.0.0" rel="stylesheet" type="text/css" />
+    <title>Tools - Tomocraft</title>
+    <link href="./style.css?v=2.0.0" rel="stylesheet" type="text/css" />
     <link href="/allStyle.css?v=2.0.0" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,9 +41,12 @@
         <i class="fa-solid fa-moon icon-moon"></i>
         <i class="fa-solid fa-sun icon-sun"></i>
     </button>
+    <button class="lang-toggle" aria-label="Toggle language">
+        EN
+    </button>
     <div class="header">
         <div class="header__container transparent">
-            <a href="/" class="logo" id="move">
+            <a href="/ja/" class="logo" id="move">
                 <img src="/images/logo.webp" alt="tomocraft-logo" width="200" height="auto" />
             </a>
             <button type="button" class="hamburger">
@@ -56,10 +57,10 @@
     <nav class="nav sawarabi-mincho-regular">
         <div class="nav__inner">
             <ul class="nav__list">
-                <li class="nav__item"><a href="/" id="move">Home</a></li>
-                <li class="nav__item"><a href="/about/" id="move">About</a></li>
-                <li class="nav__item"><a href="/projects/" id="move">Projects</a></li>
-                <li class="nav__item"><a href="/tools/" id="move">Tools</a></li>
+                <li class="nav__item"><a href="/ja/" id="move">ホーム</a></li>
+                <li class="nav__item"><a href="/ja/about/" id="move">当サイトについて</a></li>
+                <li class="nav__item"><a href="/ja/projects/" id="move">作品紹介</a></li>
+                <li class="nav__item"><a href="/ja/tools/" id="move">開発ツール</a></li>
             </ul>
             <div class="nav__footer">
                 <div class="nav__sns">
@@ -73,36 +74,18 @@
     </nav>
     <div class="page-top"><a href="#"></a></div>
     <div class="top sawarabi-mincho-regular">
-        <h1 id="topText">"I am Tomocraft."</h1>
-        <img id="topImg" src="/images/about.webp" />
+        <h1 id="topText">"アイデアを実現する"</h1>
+        <img id="topImg" src="/images/tools.webp" />
     </div>
-    <div class="first-intro fade-in-section">
-        <h1 class="sawarabi-mincho-regular">Who is "Tomocraft".</h1>
+    <div class="first-index fade-in-section">
+        <h1 class="sawarabi-mincho-regular">注意事項</h1>
         <hr class="section-divider">
-        <p class="sawarabi-mincho-regular" id="first-intro"><span>Hello, I'm Tomocraft (AwfulBread). I don't
-                particularly have
-                a preferred name. Recently, I've been creating add-ons for Minecraft Bedrock Edition, coming up with
-                commands, and developing plugins for BDSX. My favorite language is JavaScript. I got into programming
-                about
-                10 months ago when I started working with Discord.js. Feel free to reach out and chat anytime!</span>
-        </p>
+        <p class="sawarabi-mincho-regular">ツールの使用は全て自己責任でお願いします</p>
     </div>
-    <div class="second-intro fade-in-section">
-        <h1 class="sawarabi-mincho-regular">Basic Info</h1>
+    <div class="projects fade-in-section">
+        <h1 class="sawarabi-mincho-regular">製作物</h1>
         <hr class="section-divider">
-        <div class="glass-card">
-            <p class="sawarabi-mincho-regular">
-                <span class="bold">Name</span>: Tomocraft (AwfulBread)<br>
-                <span class="bold">MCID</span>: TomocraftK<br>
-                <span class="bold">Age</span>: <span>unknown</span><br>
-                <span class="bold">Gender</span>: <span>Man</span><br>
-                <span class="bold">Minecraft</span>: <span>about 8 years ago</span><br>
-                <span class="bold">Abilities</span>: ["Plugins(Spigot & BDSX)", "Commands(Bedrock)", "Addons",
-                "Node.js", "Discord.js"]<br>
-                <span class="bold">Languages</span>: ["Japanese", "English", "Java", "JavaScript", "HTML", "CSS",
-                "TypeScript"]
-            </p>
-        </div>
+        <div class="project-contents" id="project-contents"></div>
     </div>
     <div class="logo-bottom">
         <p><img src="/images/logo.webp"></p>
@@ -115,7 +98,7 @@
     <div class="copyright sawarabi-mincho-regular">
         <h5>Copyright © 2024-2026 Tomocraft. All rights reserved.</h5>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     <script src="/allScript.js"></script>
 </body>
 
