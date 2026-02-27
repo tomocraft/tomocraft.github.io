@@ -1,5 +1,41 @@
 [
     {
+        "image": "https://minecraft-mcworld.com/wp-content/uploads/Screenshot-6-eb6270fd-768x432.png",
+        "date": "2025/12/14",
+        "text": "Chinese Dance - A Minecraft Bedrock Addon",
+        "description": "This is a chinese dance addon.",
+        "url": "https://minecraft-mcworld.com/190547/",
+        "text_ja": "中国ダンスアドオン - アドオン",
+        "description_ja": "中国軍隊ダンスをするためのアドオンです。"
+    },
+    {
+        "image": "https://minecraft-mcworld.com/wp-content/uploads/Untitled411_20250604215440-9e5d821e-768x432.jpg",
+        "date": "2025/07/22",
+        "text": "Maze Wars - A Minecraft Bedrock World",
+        "description": "This is a maze wars world.",
+        "url": "https://minecraft-mcworld.com/157418/",
+        "text_ja": "迷路PVP - 統合版ワールド",
+        "description_ja": "迷路PVPをするためのワールドです。"
+    },
+    {
+        "image": "https://minecraft-mcworld.com/wp-content/uploads/world_icon-da2a3d23-768x432.jpeg",
+        "date": "2025/06/08",
+        "text": "Survival Wars - A Minecraft Bedrock World",
+        "description": "This is a survival wars world.",
+        "url": "https://minecraft-mcworld.com/149307/",
+        "text_ja": "サバイバル攻城戦 - 統合版ワールド",
+        "description_ja": "サバイバル攻城戦をするためのワールドです。"
+    },
+    {
+        "image": "https://minecraft-mcworld.com/wp-content/uploads/BEDWARS-23e218f1-768x432.jpg",
+        "date": "2025/03/02",
+        "text": "Bedwars - A Minecraft Bedrock World",
+        "description": "This is a bedwars world.",
+        "url": "https://minecraft-mcworld.com/127041/",
+        "text_ja": "ベッドウォーズ - 統合版ワールド",
+        "description_ja": "ベッドウォーズをするためのワールドです。"
+    },
+    {
         "image": "https://minecraft-mcworld.com/wp-content/uploads/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2024-03-21-222759-684a6cae.jpg",
         "date": "2024/03/21",
         "text": "Mirror Addon - A Minecraft Bedrock Addon",

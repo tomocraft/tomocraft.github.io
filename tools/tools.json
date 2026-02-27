@@ -1,5 +1,14 @@
 [
     {
+        "image": "https://minecraft-mcworld.com/wp-content/uploads/checkcmd.vercel.app_ja-481x271.jpg",
+        "date": "2026/02/22",
+        "text": "Check MCBE Command - A WEB TOOL",
+        "description": "This is a tool to check commands.",
+        "url": "https://checkcmd.tomocraft.com/",
+        "text_ja": "統合版コマンドチェッカー - WEBツール",
+        "description_ja": "統合版コマンドをチェックするためのツールです。"
+    },
+    {
         "image": "/images/notif_2.webp",
         "date": "2024/03/14",
         "text": "EncryptRP - A WEB TOOL",
