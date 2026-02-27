@@ -1,5 +1,5 @@
 "use strict";
-fetch("https://tomocraft.com/projects/projects.json")
+fetch("https://www.tomocraft.com/projects/projects.json")
     .then(response => response.json())
     .then(projects => {
         const projectContents = document.getElementById("project-contents");
