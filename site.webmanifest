@@ -1,0 +1,25 @@
+{
+    "name": "Tomocraft",
+    "short_name": "Tomocraft",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "32x32",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/webclip.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/webclip.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone",
+    "start_url": "/"
+}
