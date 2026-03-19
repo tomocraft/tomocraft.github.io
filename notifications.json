@@ -1,5 +1,17 @@
 [
     {
+        "image": "https://pbs.twimg.com/media/HB0yjcQa4AAu9Dj?format=png&name=small",
+        "date": "2026/03/10",
+        "text": "LoginMonitor has been released!",
+        "url": "https://gitlab.com/tomocraft/loginmonitor"
+    },
+    {
+        "image": "https://pbs.twimg.com/card_img/2032402185544482816/0nWZrhOw?format=jpg&name=small",
+        "date": "2026/03/06",
+        "text": "The article listing all commands has been published!",
+        "url": "https://note.com/tomocraftk/n/n28063ae7689c"
+    },
+    {
         "image": "https://minecraft-mcworld.com/wp-content/uploads/checkcmd.vercel.app_ja-481x271.jpg",
         "date": "2026/02/22",
         "text": "Check MCBE Command Site has been released!",
