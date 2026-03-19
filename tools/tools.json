@@ -1,5 +1,14 @@
 [
     {
+        "image": "https://pbs.twimg.com/media/HB0yjcQa4AAu9Dj?format=png&name=small",
+        "date": "2026/03/10",
+        "text": "LoginMonitor - Extract Skin Data",
+        "description": "This is a tool to extract login data."
+        "url": "https://gitlab.com/tomocraft/loginmonitor",
+        "text_ja": "LoginMonitor - ログインデータを抽出",
+        "description_ja": "スキン画像などのログインデータを保存します。"
+    },
+    {
         "image": "https://minecraft-mcworld.com/wp-content/uploads/checkcmd.vercel.app_ja-481x271.jpg",
         "date": "2026/02/22",
         "text": "Check MCBE Command - A WEB TOOL",
