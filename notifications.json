@@ -1,12 +1,24 @@
 [
     {
+        "image": "https://pbs.twimg.com/media/HD7ykEdboAAKwfq?format=jpg&name=small",
+        "date": "2026/03/21",
+        "text": "MCStructure Viewer has been released!",
+        "url": "https://marketplace.visualstudio.com/items?itemName=Tomocraft.mcstructure-preview"
+    },
+    {
+        "image": "https://pbs.twimg.com/media/HD7xJlFa4AA2BqE?format=png&name=360x360",
+        "date": "2026/03/20",
+        "text": "MCBE Command Checker has been released!",
+        "url": "https://marketplace.visualstudio.com/items?itemName=Tomocraft.mcbe-command-checker"
+    },
+    {
         "image": "https://pbs.twimg.com/media/HB0yjcQa4AAu9Dj?format=png&name=small",
         "date": "2026/03/10",
         "text": "LoginMonitor has been released!",
         "url": "https://gitlab.com/tomocraft/loginmonitor"
     },
     {
-        "image": "https://pbs.twimg.com/card_img/2032402185544482816/0nWZrhOw?format=jpg&name=small",
+        "image": "https://assets.st-note.com/production/uploads/images/256237963/rectangle_large_type_2_86992450311dee4f5f9f15a172bfc79a.jpeg?width=340",
         "date": "2026/03/06",
         "text": "The article listing all commands has been published!",
         "url": "https://note.com/tomocraftk/n/n28063ae7689c"
