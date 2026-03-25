@@ -21,7 +21,7 @@
         "image": "https://pbs.twimg.com/media/HB0yjcQa4AAu9Dj?format=png&name=small",
         "date": "2026/03/10",
         "text": "LoginMonitor - Extract Skin Data",
-        "description": "This is a tool to extract login data."
+        "description": "This is a tool to extract login data.",
         "url": "https://gitlab.com/tomocraft/loginmonitor",
         "text_ja": "LoginMonitor - ログインデータを抽出",
         "description_ja": "スキン画像などのログインデータを保存します。"
