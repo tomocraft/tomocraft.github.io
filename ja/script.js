@@ -6,6 +6,10 @@ fetch('https://www.tomocraft.com/notifications.json')
     .then(response => response.json())
     .then(notifications => {
         const trans = {
+            "MCStructure Viewer has been released!": "MCStructure Previewを公開しました！",
+            "MCBE Command Checker has been released!": "MCBE Command Checkerを公開しました！",
+            "LoginMonitor has been released!": "LoginMonitorを公開しました！",
+            "The article listing all commands has been published!": "コマンド全集のnote記事を公開しました！",
             "Check MCBE Command Site has been released!": "統合版コマンド確認サイトが公開されました！",
             "Chinese Dance Addon has been released!": "中国軍隊ダンスアドオンが公開されました！",
             "Maze Wars World has been released!": "迷路PVPが公開されました！",
