@@ -1,5 +1,23 @@
 [
     {
+        "image": "https://pbs.twimg.com/media/HD7ykEdboAAKwfq?format=jpg&name=small",
+        "date": "2026/03/21",
+        "text": "MCStructure Preview - VS Code Extension",
+        "url": "https://marketplace.visualstudio.com/items?itemName=Tomocraft.mcstructure-preview",
+        "description": "This is a VS Code extension to preview .mcstructure files.",
+        "text_ja": "MCStructure Preview - VSCode拡張機能",
+        "description_ja": ".mcstructureファイルの簡易3Dプレビューを表示します。"
+    },
+    {
+        "image": "https://pbs.twimg.com/media/HD7xJlFa4AA2BqE?format=png&name=360x360",
+        "date": "2026/03/20",
+        "text": "MCBE Command Checker - VS Code Extension",
+        "url": "https://marketplace.visualstudio.com/items?itemName=Tomocraft.mcbe-command-checker",
+        "description": "This is a VS Code extension to validate bedrock commands.",
+        "text_ja": "MCBE Command Checker - VSCode拡張機能",
+        "description_ja": "統合版のコマンドの構文チェック・タブ補完を行います。"
+    },
+    {
         "image": "https://pbs.twimg.com/media/HB0yjcQa4AAu9Dj?format=png&name=small",
         "date": "2026/03/10",
         "text": "LoginMonitor - Extract Skin Data",
